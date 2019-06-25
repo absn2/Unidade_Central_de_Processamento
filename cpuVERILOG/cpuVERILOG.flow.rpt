@@ -1,5 +1,5 @@
 Flow report for cpuVERILOG
-Mon Jun 10 17:07:57 2019
+Tue Jun 25 10:48:49 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Mon Jun 10 17:07:57 2019         ;
+; Flow Status                   ; Successful - Tue Jun 25 10:48:49 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; cpuVERILOG                                    ;
 ; Top-level Entity Name         ; ula                                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/10/2019 17:07:49 ;
+; Start date & time ; 06/25/2019 10:48:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; cpuVERILOG          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799398773.156019726921752 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 229335799398913.156147051814976 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; ula         ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; ula         ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; ula                             ; cpuVERILOG    ; --          ; --             ;
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 340 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 519 MB              ; 00:00:03                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 267 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 340 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:05     ; 2.3                     ; 519 MB              ; 00:00:03                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 339 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 268 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:09     ; --                      ; --                  ; 00:00:05                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; g3c38            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; g3c38            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; g3c38            ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; g3c38            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; g3c49            ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; g3c49            ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; g3c49            ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; g3c49            ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpuVERILOG
-Mon Jun 10 17:07:49 2019
+Tue Jun 25 10:48:39 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Jun 10 17:07:49 2019         ;
+; Analysis & Synthesis Status   ; Successful - Tue Jun 25 10:48:39 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; cpuVERILOG                                    ;
 ; Top-level Entity Name         ; ula                                           ;
@@ -157,13 +157,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path            ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+
-; ula.v                            ; yes             ; User Verilog HDL File  ; D:/Users/afss2/Desktop/cpuVERILOG/ula.v ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+
+; ula.v                            ; yes             ; User Verilog HDL File  ; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/ula.v ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -221,11 +221,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; outp[0]$latch                                      ; Mux0                ; yes                    ;
-; outp[1]$latch                                      ; Mux0                ; yes                    ;
-; outp[2]$latch                                      ; Mux0                ; yes                    ;
-; outp[3]$latch                                      ; Mux0                ; yes                    ;
-; stat$latch                                         ; Mux0                ; yes                    ;
+; outp[0]$latch                                      ; Mux6                ; yes                    ;
+; outp[1]$latch                                      ; Mux6                ; yes                    ;
+; outp[2]$latch                                      ; Mux6                ; yes                    ;
+; outp[3]$latch                                      ; Mux6                ; yes                    ;
+; stat$latch                                         ; Mux6                ; yes                    ;
 ; Number of user-specified and inferred latches = 5  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -261,7 +261,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Mon Jun 10 17:07:49 2019
+    Info: Processing started: Tue Jun 25 10:48:38 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpuVERILOG -c cpuVERILOG
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file ula.v
@@ -294,8 +294,8 @@ Info: Implemented 42 device resources after synthesis - the final resource count
     Info: Implemented 26 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 346 megabytes
-    Info: Processing ended: Mon Jun 10 17:07:49 2019
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Jun 25 10:48:39 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

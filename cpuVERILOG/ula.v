@@ -1,12 +1,11 @@
 module ula(a,b,tula,outp,stat);
-	input wire [3:0] a;
-	input wire [3:0] b;
+	input wire signed [3:0] a;
+	input wire signed [3:0] b;
 	input wire [2:0] tula;
-	output reg [3:0] outp;
+	output reg signed [3:0] outp;
 	output reg stat;
 	
 	always @(*) begin
-	
 		case(tula)
 			3'b000: 
 				outp = a+b;
