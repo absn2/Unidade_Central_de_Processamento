@@ -20,7 +20,7 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-ula
+UnidadeDeControle
 # storage
 db|cpuVERILOG.(0).cnf
 db|cpuVERILOG.(0).cnf
@@ -30,8 +30,8 @@ ON
 }
 # case_sensitive
 # source_file
-ula.v
-ae16ca41f48d34362717e57a9fad0e1
+unidadedecontrole.v
+d7663ab651e3aa533f424545cde2a9e
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -48,6 +48,24 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
+}
+# user_parameter {
+RESET
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+HOLD
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTR
+011
+PARAMETER_UNSIGNED_BIN
+DEF
 }
 # hierarchies {
 |

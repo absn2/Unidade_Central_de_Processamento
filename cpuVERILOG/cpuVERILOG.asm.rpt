@@ -1,5 +1,5 @@
 Assembler report for cpuVERILOG
-Tue Jun 25 10:48:48 2019
+Tue Jun 25 14:41:57 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jun 25 10:48:48 2019 ;
+; Assembler Status      ; Successful - Tue Jun 25 14:41:57 2019 ;
 ; Revision Name         ; cpuVERILOG                            ;
-; Top-level Entity Name ; ula                                   ;
+; Top-level Entity Name ; UnidadeDeControle                     ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+----------------------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                                         ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                           ;
-; Checksum       ; 0x0027D479                                                           ;
+; Checksum       ; 0x00276502                                                           ;
 +----------------+----------------------------------------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+------------------------------------------------------------------+
 ; Device             ; EPC16                                                            ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                       ;
-; Checksum           ; 0x1EF41838                                                       ;
+; Checksum           ; 0x1EF60BB7                                                       ;
 ; Compression Ratio  ; 3                                                                ;
 +--------------------+------------------------------------------------------------------+
 
@@ -118,13 +118,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Tue Jun 25 10:48:46 2019
+    Info: Processing started: Tue Jun 25 14:41:55 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off cpuVERILOG -c cpuVERILOG
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 339 megabytes
-    Info: Processing ended: Tue Jun 25 10:48:48 2019
+    Info: Processing ended: Tue Jun 25 14:41:57 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

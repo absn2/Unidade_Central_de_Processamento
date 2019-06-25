@@ -1,6 +1,6 @@
 module UnidadeDeControle(status,clk,Opcode,tula,Tx,Ty,Tz);
 	
-	input wire clk;
+	input wire status,clk;
 	input wire [2:00] Opcode;
 	output reg [2:00] Tx,Ty,Tz,tula;
 	

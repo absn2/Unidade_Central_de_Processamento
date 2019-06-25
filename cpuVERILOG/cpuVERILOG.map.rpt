@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpuVERILOG
-Tue Jun 25 10:48:39 2019
+Tue Jun 25 14:41:50 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -13,10 +13,12 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
+  8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |UnidadeDeControle
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,16 +44,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Tue Jun 25 10:48:39 2019         ;
+; Analysis & Synthesis Status   ; Successful - Tue Jun 25 14:41:50 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; cpuVERILOG                                    ;
-; Top-level Entity Name         ; ula                                           ;
+; Top-level Entity Name         ; UnidadeDeControle                             ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 26                                            ;
-;     Dedicated logic registers ; 0                                             ;
-; Total registers               ; 0                                             ;
-; Total pins                    ; 16                                            ;
+;     Combinational ALUTs       ; 5                                             ;
+;     Dedicated logic registers ; 4                                             ;
+; Total registers               ; 4                                             ;
+; Total pins                    ; 17                                            ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 0                                             ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -65,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; ula                ; cpuVERILOG         ;
+; Top-level entity name                                                      ; UnidadeDeControle  ; cpuVERILOG         ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -157,53 +159,53 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+
-; ula.v                            ; yes             ; User Verilog HDL File  ; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/ula.v ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+
+; UnidadeDeControle.v              ; yes             ; User Verilog HDL File  ; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/UnidadeDeControle.v ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 26    ;
-; Dedicated logic registers                     ; 0     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 7     ;
-;                                               ;       ;
-; Total combinational functions                 ; 26    ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 2     ;
-;     -- 6 input functions                      ; 5     ;
-;     -- 5 input functions                      ; 1     ;
-;     -- 4 input functions                      ; 2     ;
-;     -- <=3 input functions                    ; 16    ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 16    ;
-;     -- extended LUT mode                      ; 2     ;
-;     -- arithmetic mode                        ; 4     ;
-;     -- shared arithmetic mode                 ; 4     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 33    ;
-;                                               ;       ;
-; Total registers                               ; 0     ;
-;     -- Dedicated logic registers              ; 0     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 17    ;
-;                                               ;       ;
-; I/O pins                                      ; 16    ;
-; Maximum fan-out node                          ; b[0]  ;
-; Maximum fan-out                               ; 7     ;
-; Total fan-out                                 ; 106   ;
-; Average fan-out                               ; 2.52  ;
-+-----------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++-----------------------------------------------+---------+
+; Resource                                      ; Usage   ;
++-----------------------------------------------+---------+
+; Estimated ALUTs Used                          ; 5       ;
+; Dedicated logic registers                     ; 4       ;
+;                                               ;         ;
+; Estimated ALUTs Unavailable                   ; 0       ;
+;                                               ;         ;
+; Total combinational functions                 ; 5       ;
+; Combinational ALUT usage by number of inputs  ;         ;
+;     -- 7 input functions                      ; 0       ;
+;     -- 6 input functions                      ; 0       ;
+;     -- 5 input functions                      ; 0       ;
+;     -- 4 input functions                      ; 0       ;
+;     -- <=3 input functions                    ; 5       ;
+;                                               ;         ;
+; Combinational ALUTs by mode                   ;         ;
+;     -- normal mode                            ; 5       ;
+;     -- extended LUT mode                      ; 0       ;
+;     -- arithmetic mode                        ; 0       ;
+;     -- shared arithmetic mode                 ; 0       ;
+;                                               ;         ;
+; Estimated ALUT/register pairs used            ; 5       ;
+;                                               ;         ;
+; Total registers                               ; 4       ;
+;     -- Dedicated logic registers              ; 4       ;
+;     -- I/O registers                          ; 0       ;
+;                                               ;         ;
+; Estimated ALMs:  partially or completely used ; 3       ;
+;                                               ;         ;
+; I/O pins                                      ; 17      ;
+; Maximum fan-out node                          ; Tx[0]~0 ;
+; Maximum fan-out                               ; 4       ;
+; Total fan-out                                 ; 30      ;
+; Average fan-out                               ; 1.15    ;
++-----------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,24 +213,26 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |ula                       ; 26 (26)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 16   ; 0            ; |ula                ; work         ;
+; |UnidadeDeControle         ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |UnidadeDeControle  ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; outp[0]$latch                                      ; Mux6                ; yes                    ;
-; outp[1]$latch                                      ; Mux6                ; yes                    ;
-; outp[2]$latch                                      ; Mux6                ; yes                    ;
-; outp[3]$latch                                      ; Mux6                ; yes                    ;
-; stat$latch                                         ; Mux6                ; yes                    ;
-; Number of user-specified and inferred latches = 5  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; tula[1]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; tula[0]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; tula[2]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; Tz[2]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; Tx[2]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; Ty[2]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; Ty[0]~reg0                            ; Merged with Tz[1]~reg0                 ;
+; Ty[1]~reg0                            ; Merged with Tx[1]~reg0                 ;
+; Total Number of Removed Registers = 8 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -236,23 +240,36 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 5:1                ; 3 bits    ; 9 ALUTs       ; 9 ALUTs              ; 0 ALUTs                ; No         ; |ula|Mux3                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 8:1                ; 4 bits    ; 20 ALUTs      ; 8 ALUTs              ; 12 ALUTs               ; Yes        ; |UnidadeDeControle|Tx[0]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |UnidadeDeControle ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; RESET          ; 000   ; Unsigned Binary                                          ;
+; LOAD           ; 001   ; Unsigned Binary                                          ;
+; HOLD           ; 010   ; Unsigned Binary                                          ;
+; SHIFTR         ; 011   ; Unsigned Binary                                          ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -261,41 +278,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Tue Jun 25 10:48:38 2019
+    Info: Processing started: Tue Jun 25 14:41:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpuVERILOG -c cpuVERILOG
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file ula.v
     Info: Found entity 1: ula
-Info: Elaborating entity "ula" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ula.v(16): truncated value with size 32 to match size of target (4)
-Warning (10240): Verilog HDL Always Construct warning at ula.v(10): inferring latch(es) for variable "outp", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ula.v(10): inferring latch(es) for variable "stat", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "stat" at ula.v(10)
-Info (10041): Inferred latch for "outp[0]" at ula.v(10)
-Info (10041): Inferred latch for "outp[1]" at ula.v(10)
-Info (10041): Inferred latch for "outp[2]" at ula.v(10)
-Info (10041): Inferred latch for "outp[3]" at ula.v(10)
-Warning: Latch outp[0]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal tula[2]
-Warning: Latch outp[1]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal tula[1]
-Warning: Latch outp[2]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal tula[1]
-Warning: Latch outp[3]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal tula[1]
-Warning: Latch stat$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal tula[0]
+Info: Found 1 design units, including 1 entities, in source file unidadedecontrole.v
+    Info: Found entity 1: UnidadeDeControle
+Info: Elaborating entity "UnidadeDeControle" for the top level hierarchy
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "tula[0]" is stuck at GND
+    Warning (13410): Pin "tula[1]" is stuck at GND
+    Warning (13410): Pin "tula[2]" is stuck at GND
+    Warning (13410): Pin "Tx[2]" is stuck at GND
+    Warning (13410): Pin "Ty[2]" is stuck at GND
+    Warning (13410): Pin "Tz[2]" is stuck at GND
 Warning: Ignored assignments for entity "cpuVERILOG" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity cpuVERILOG -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity cpuVERILOG -section_id "Root Region" was ignored
-Info: Implemented 42 device resources after synthesis - the final resource count might be different
-    Info: Implemented 11 input pins
-    Info: Implemented 5 output pins
-    Info: Implemented 26 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 346 megabytes
-    Info: Processing ended: Tue Jun 25 10:48:39 2019
+Info: Generated suppressed messages file D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.map.smsg
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "status"
+Info: Implemented 23 device resources after synthesis - the final resource count might be different
+    Info: Implemented 5 input pins
+    Info: Implemented 12 output pins
+    Info: Implemented 6 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 347 megabytes
+    Info: Processing ended: Tue Jun 25 14:41:50 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.map.smsg.
 
 
