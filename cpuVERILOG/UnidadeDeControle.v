@@ -12,31 +12,31 @@ module UnidadeDeControle(status,clk,Opcode,tula,Tx,Ty,Tz);
 	
 	 always @ (posedge clk) begin
 		case (Opcode)
-			3'b001: begin // CLDRD
+			3'b000: begin // CLDRD
 				Ty = RESET;
 				Tx = LOAD;
 				Tz = RESET;
 				tula = HOLD;
 				end
-			3'b010: begin // ADDLD
+			3'b001: begin // ADDLD
 				Ty = LOAD;
 				Tx = LOAD;
 				Tz = HOLD;
 				tula = HOLD;
 				end
-			3'b011: begin // ADD
+			3'b010: begin // ADD
 				Ty = LOAD;
 				Tx = HOLD;
 				Tz = HOLD;
 				tula = HOLD;
 				end
-			3'b100: begin // DIV2
+			3'b011: begin // DIV2
 				Ty = SHIFTR;
 				Tx = HOLD;
 				Tz = HOLD;
 				tula = HOLD;
 				end
-			3'b101 : begin // DISPLAY 
+			3'b100 : begin // DISPLAY 
 				Ty = HOLD;
 				Tx = HOLD;
 				Tz = LOAD;

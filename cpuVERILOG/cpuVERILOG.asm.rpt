@@ -1,6 +1,6 @@
 Assembler report for cpuVERILOG
-Thu Jun 27 13:41:16 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Jun 27 16:23:38 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof
-  6. Assembler Device Options: D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof
+  5. Assembler Device Options: C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof
+  6. Assembler Device Options: C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jun 27 13:41:16 2019 ;
+; Assembler Status      ; Successful - Thu Jun 27 16:23:38 2019 ;
 ; Revision Name         ; cpuVERILOG                            ;
-; Top-level Entity Name ; RegistratorX                          ;
+; Top-level Entity Name ; memory                                ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -84,30 +84,30 @@ applicable agreement for further details.
 +-------------------------------------------------------------+
 ; File Name                                                   ;
 +-------------------------------------------------------------+
-; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof ;
-; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof ;
+; C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof ;
+; C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof ;
 +-------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof ;
+; Assembler Device Options: C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.sof ;
 +----------------+----------------------------------------------------------------------+
 ; Option         ; Setting                                                              ;
 +----------------+----------------------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                                         ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                           ;
-; Checksum       ; 0x00277463                                                           ;
+; Checksum       ; 0x00276828                                                           ;
 +----------------+----------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof ;
+; Assembler Device Options: C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpuVERILOG.pof ;
 +--------------------+------------------------------------------------------------------+
 ; Option             ; Setting                                                          ;
 +--------------------+------------------------------------------------------------------+
 ; Device             ; EPC16                                                            ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                       ;
-; Checksum           ; 0x1EF61331                                                       ;
+; Checksum           ; 0x1EF5F672                                                       ;
 ; Compression Ratio  ; 3                                                                ;
 +--------------------+------------------------------------------------------------------+
 
@@ -116,16 +116,16 @@ applicable agreement for further details.
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Jun 27 13:41:15 2019
+Info: Running Quartus II Assembler
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jun 27 16:23:36 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off cpuVERILOG -c cpuVERILOG
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 339 megabytes
-    Info: Processing ended: Thu Jun 27 13:41:16 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 293 megabytes
+    Info: Processing ended: Thu Jun 27 16:23:38 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

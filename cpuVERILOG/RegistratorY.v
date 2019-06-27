@@ -1,9 +1,9 @@
-module RegistratorX (Tx, inx, clk, outx);
+module RegistratorY (Ty, outula, clk, outy);
 	
 	input wire clk;
-	input wire signed [3:0] inx;
-	input wire [2:0] Tx;
-	output reg signed [3:0] outx;
+	input wire signed [3:0] outula;
+	input wire [2:0] Ty;
+	output reg signed [3:0] outy;
 	
 	parameter HOLD = 3'b000;
 	parameter LOAD = 3'b001;
@@ -12,21 +12,21 @@ module RegistratorX (Tx, inx, clk, outx);
 	parameter RESET = 3'b100;
 	
 	always @ (posedge clk) begin
-		case (Tx)
+		case (Ty)
 			HOLD : begin
-				outx = outx;
+				outy = outy;
 				end
 			LOAD : begin
-				outx = inx;
+				outy = outula;
 				end
 			SHIFTR : begin
-				outx = (outx >> 1);
+				outy = (outy >> 1);
 				end
 			SHIFTL : begin
-				outx = (outx << 1);
+				outy = (outy << 1);
 				end
 			RESET : begin
-				outx = 4'b0000;
+				outy = 4'b0000;
 				end
 		endcase	
 	

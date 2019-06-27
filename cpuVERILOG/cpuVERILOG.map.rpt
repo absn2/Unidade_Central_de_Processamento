@@ -1,6 +1,6 @@
 Analysis & Synthesis report for cpuVERILOG
-Thu Jun 27 13:41:10 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Jun 27 17:08:45 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -10,12 +10,7 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |RegistratorX
- 10. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -38,25 +33,25 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Jun 27 13:41:10 2019         ;
-; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
-; Revision Name                 ; cpuVERILOG                                    ;
-; Top-level Entity Name         ; RegistratorX                                  ;
-; Family                        ; Stratix II                                    ;
-; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 5                                             ;
-;     Dedicated logic registers ; 4                                             ;
-; Total registers               ; 4                                             ;
-; Total pins                    ; 12                                            ;
-; Total virtual pins            ; 0                                             ;
-; Total block memory bits       ; 0                                             ;
-; DSP block 9-bit elements      ; 0                                             ;
-; Total PLLs                    ; 0                                             ;
-; Total DLLs                    ; 0                                             ;
-+-------------------------------+-----------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status   ; Failed - Thu Jun 27 17:08:45 2019            ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; cpuVERILOG                                   ;
+; Top-level Entity Name         ; cpu                                          ;
+; Family                        ; Stratix II                                   ;
+; Logic utilization             ; N/A until Partition Merge                    ;
+;     Combinational ALUTs       ; N/A until Partition Merge                    ;
+;     Dedicated logic registers ; N/A until Partition Merge                    ;
+; Total registers               ; N/A until Partition Merge                    ;
+; Total pins                    ; N/A until Partition Merge                    ;
+; Total virtual pins            ; N/A until Partition Merge                    ;
+; Total block memory bits       ; N/A until Partition Merge                    ;
+; DSP block 9-bit elements      ; N/A until Partition Merge                    ;
+; Total PLLs                    ; N/A until Partition Merge                    ;
+; Total DLLs                    ; N/A until Partition Merge                    ;
++-------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -64,7 +59,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; RegistratorX       ; cpuVERILOG         ;
+; Top-level entity name                                                      ; cpu                ; cpuVERILOG         ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -156,101 +151,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
-; RegistratorX.v                   ; yes             ; User Verilog HDL File  ; D:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/RegistratorX.v ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
-
-
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 5     ;
-; Dedicated logic registers                     ; 4     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 2     ;
-;                                               ;       ;
-; Total combinational functions                 ; 5     ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 1     ;
-;     -- 6 input functions                      ; 1     ;
-;     -- 5 input functions                      ; 2     ;
-;     -- 4 input functions                      ; 0     ;
-;     -- <=3 input functions                    ; 1     ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 4     ;
-;     -- extended LUT mode                      ; 1     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 7     ;
-;                                               ;       ;
-; Total registers                               ; 4     ;
-;     -- Dedicated logic registers              ; 4     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 4     ;
-;                                               ;       ;
-; I/O pins                                      ; 12    ;
-; Maximum fan-out node                          ; Tx[1] ;
-; Maximum fan-out                               ; 5     ;
-; Total fan-out                                 ; 41    ;
-; Average fan-out                               ; 1.95  ;
-+-----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |RegistratorX              ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |RegistratorX       ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 4     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |RegistratorX ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; HOLD           ; 000   ; Unsigned Binary                                     ;
-; LOAD           ; 001   ; Unsigned Binary                                     ;
-; SHIFTR         ; 010   ; Unsigned Binary                                     ;
-; SHIFTL         ; 011   ; Unsigned Binary                                     ;
-; RESET          ; 100   ; Unsigned Binary                                     ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Jun 27 13:41:09 2019
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jun 27 17:08:44 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpuVERILOG -c cpuVERILOG
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file ula.v
@@ -259,18 +166,21 @@ Info: Found 1 design units, including 1 entities, in source file unidadedecontro
     Info: Found entity 1: UnidadeDeControle
 Info: Found 1 design units, including 1 entities, in source file registratorx.v
     Info: Found entity 1: RegistratorX
-Info: Elaborating entity "RegistratorX" for the top level hierarchy
-Warning: Ignored assignments for entity "cpuVERILOG" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity cpuVERILOG -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity cpuVERILOG -section_id "Root Region" was ignored
-Info: Implemented 17 device resources after synthesis - the final resource count might be different
-    Info: Implemented 8 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 5 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 347 megabytes
-    Info: Processing ended: Thu Jun 27 13:41:10 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Found 1 design units, including 1 entities, in source file registratory.v
+    Info: Found entity 1: RegistratorY
+Info: Found 1 design units, including 1 entities, in source file registratorz.v
+    Info: Found entity 1: RegistratorZ
+Info: Found 1 design units, including 1 entities, in source file memory.v
+    Info: Found entity 1: memory
+Info: Found 1 design units, including 1 entities, in source file cpu.v
+    Info: Found entity 1: cpu
+Info: Elaborating entity "cpu" for the top level hierarchy
+Error (10663): Verilog HDL Port Connection error at cpu.v(9): output or inout port "Opcode" must be connected to a structural net expression File: C:/Users/absn2/Desktop/cpu_2019.1/cpuVERILOG/cpu.v Line: 9
+Error: Can't elaborate top-level user hierarchy
+Error: Quartus II Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 279 megabytes
+    Error: Processing ended: Thu Jun 27 17:08:45 2019
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

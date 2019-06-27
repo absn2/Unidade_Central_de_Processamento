@@ -1,27 +1,31 @@
-|RegistratorX
-Tx[0] => Mux0.IN5
-Tx[0] => Mux1.IN4
-Tx[0] => Mux2.IN4
-Tx[0] => Mux3.IN5
-Tx[1] => Mux0.IN4
-Tx[1] => Mux1.IN3
-Tx[1] => Mux2.IN3
-Tx[1] => Mux3.IN4
-Tx[2] => Mux0.IN3
-Tx[2] => Mux1.IN2
-Tx[2] => Mux2.IN2
-Tx[2] => Mux3.IN3
-in[0] => Mux3.IN2
-in[1] => Mux2.IN1
-in[2] => Mux1.IN1
-in[3] => Mux0.IN2
-clk => out[0]~reg0.CLK
-clk => out[1]~reg0.CLK
-clk => out[2]~reg0.CLK
-clk => out[3]~reg0.CLK
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|memory
+Opcode[0] <= Opcode[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Opcode[1] <= Opcode[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Opcode[2] <= Opcode[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[0] => Mux0.IN10
+count[0] => Mux1.IN10
+count[0] => Mux2.IN10
+count[0] => Mux3.IN10
+count[0] => Mux4.IN10
+count[1] => Mux0.IN9
+count[1] => Mux1.IN9
+count[1] => Mux2.IN9
+count[1] => Mux3.IN9
+count[1] => Mux4.IN9
+count[1] => Mux5.IN5
+count[1] => Mux6.IN5
+count[1] => Mux7.IN5
+count[2] => Mux0.IN8
+count[2] => Mux1.IN8
+count[2] => Mux2.IN8
+count[2] => Mux3.IN8
+count[2] => Mux4.IN8
+count[2] => Mux5.IN4
+count[2] => Mux6.IN4
+count[2] => Mux7.IN4
+in[0] <= in[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+in[1] <= in[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+in[2] <= <GND>
+in[3] <= <GND>
 
 

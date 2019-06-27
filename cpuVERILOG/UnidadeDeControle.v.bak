@@ -1,8 +1,8 @@
 module UnidadeDeControle(status,clk,Opcode,tula,Tx,Ty,Tz);
 	
 	input wire clk,status;
-	input wire [2:00] Opcode;
-	output reg [2:00] Tx,Ty,Tz,tula;
+	input wire [2:0] Opcode;
+	output reg [2:0] Tx,Ty,Tz,tula;
 	
 	parameter HOLD = 3'b000;
 	parameter LOAD = 3'b001;
