@@ -1,7 +1,7 @@
-module RegistratorZ (Tz, in, clk, out);
+module RegistratorZ (Tz, outy, clk, out);
 	
 	input wire clk;
-	input wire signed [3:0] in;
+	input wire signed [3:0] outy;
 	input wire [2:0] Tz;
 	output reg signed [3:0] out;
 	
@@ -14,19 +14,19 @@ module RegistratorZ (Tz, in, clk, out);
 	always @ (posedge clk) begin
 		case (Tz)
 			HOLD : begin
-				out = out;
+				out <= out;
 				end
 			LOAD : begin
-				out = in;
+				out <= outy;
 				end
 			SHIFTR : begin
-				out = (out >> 1);
+				out <= (out >> 1);
 				end
 			SHIFTL : begin
-				out = (out << 1);
+				out <= (out << 1);
 				end
 			RESET : begin
-				out = 4'b0000;
+				out <= 4'b0000;
 				end
 		endcase	
 	

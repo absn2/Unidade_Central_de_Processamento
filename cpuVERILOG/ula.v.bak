@@ -1,9 +1,9 @@
-module ula(a,b,tula,outula,stat);
-	input wire signed [3:0] outx;
-	input wire signed [3:0] outy;
+module ula(outx,outy,tula,outula,status);
+	input wire [3:0] outx;
+	input wire [3:0] outy;
 	input wire [2:0] tula;
 	output reg signed [3:0] outula;
-	output reg stat;
+	output reg status;
 	
 	always @(*) begin
 		case(tula)
@@ -15,22 +15,22 @@ module ula(a,b,tula,outula,stat);
 				outula = ~outy+1;
 			3'b011: begin
 				if (outx==outy)
-					stat = 1;
+					status = 1;
 				else
-					stat = 0;
+					status = 0;
 			end
 			3'b100: begin
 				if (outx>outy)
-					stat = 1'b1;
+					status = 1'b1;
 				else
-					stat = 1'b0;
+					status = 1'b0;
 				end
 		
 			3'b101: begin
 				if (outx<outy)
-					stat=1;
+					status =1;
 				else
-					stat=0;
+					status =0;
 				end
 			3'b110:
 				outula= outx&outy;

@@ -2,35 +2,35 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 1.858 ns
-From           : count[1]
-To             : Opcode[1]$latch
-From Clock     : --
-To Clock       : count[2]
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.746 ns
-From           : in[1]$latch
-To             : in[1]
-From Clock     : count[1]
+Actual Time    : 10.480 ns
+From           : memory:memoria|in[2]
+To             : in[2]
+From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.146 ns
-From           : count[0]
-To             : Opcode[0]$latch
-From Clock     : --
-To Clock       : count[1]
+Actual Time    : 178.03 MHz ( period = 5.617 ns )
+From           : memory:memoria|Opcode[2]
+To             : UnidadeDeControle:controle|Tz[0]
+From Clock     : clk
+To Clock       : clk
 Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count[0]~reg0
+To             : memory:memoria|in[2]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 6
 
 Type           : Total number of failed paths
 Slack          : 
@@ -40,7 +40,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 6
 
 --------------------------------------------------------------------------------------
 
