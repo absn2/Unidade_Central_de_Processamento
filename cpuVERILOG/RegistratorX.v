@@ -1,14 +1,9 @@
-module RegistratorX (Tx, in, clk, out);
+module RegistratorX (Tx, in, clk, outx);
 	
 	input wire clk;
-	
-	input wire signed [3:0] in;
-	
+	input wire [3:0] in;
 	input wire [2:0] Tx;
-	
-	output reg signed [3:0] out;
-	
-	
+	output reg [3:0] outx;
 	
 	parameter HOLD = 3'b000;
 	parameter LOAD = 3'b001;
@@ -19,19 +14,19 @@ module RegistratorX (Tx, in, clk, out);
 	always @ (posedge clk) begin
 		case (Tx)
 			HOLD : begin
-				out = out;
+				outx <= outx;
 				end
 			LOAD : begin
-				out = in;
+				outx <= in;
 				end
 			SHIFTR : begin
-				out = (out >> 1);
+				outx <= (outx >> 1);
 				end
 			SHIFTL : begin
-				out = (out << 1);
+				outx <= (outx << 1);
 				end
 			RESET : begin
-				out = 4'b0000;
+				outx <= 4'b0000;
 				end
 		endcase	
 	

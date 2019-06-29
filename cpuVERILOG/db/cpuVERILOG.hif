@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,7 +20,7 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-RegistratorX
+cpu
 # storage
 db|cpuVERILOG.(0).cnf
 db|cpuVERILOG.(0).cnf
@@ -30,8 +30,80 @@ ON
 }
 # case_sensitive
 # source_file
-registratorx.v
-c4b4f34762be5e3a84f066b337f17ae5
+cpu.v
+9cd7f18f753a9592fded5e7aa9ebdf21
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+memory
+# storage
+db|cpuVERILOG.(1).cnf
+db|cpuVERILOG.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+memory.v
+ffcf44b13ea2878bfd443e4c0a13f61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+memory:memoria
+}
+# macro_sequence
+
+# end
+# entity
+UnidadeDeControle
+# storage
+db|cpuVERILOG.(2).cnf
+db|cpuVERILOG.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+unidadedecontrole.v
+f52e521f7bb3d1a741e0dad5f9f1e3
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -72,7 +144,217 @@ PARAMETER_UNSIGNED_BIN
 DEF
 }
 # hierarchies {
-|
+UnidadeDeControle:controle
+}
+# macro_sequence
+
+# end
+# entity
+RegistratorX
+# storage
+db|cpuVERILOG.(3).cnf
+db|cpuVERILOG.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+registratorx.v
+eeaea95f455ab66b7a6e957b5d2dd3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+HOLD
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTR
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTL
+011
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET
+100
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+RegistratorX:regx
+}
+# macro_sequence
+
+# end
+# entity
+RegistratorY
+# storage
+db|cpuVERILOG.(4).cnf
+db|cpuVERILOG.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+registratory.v
+7b1b165f526eb385bed85dc10b8e040
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+HOLD
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTR
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTL
+011
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET
+100
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+RegistratorY:regy
+}
+# macro_sequence
+
+# end
+# entity
+ula
+# storage
+db|cpuVERILOG.(5).cnf
+db|cpuVERILOG.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+ula.v
+98c172515bc8448226dfb4743797597
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ula:ulaula
+}
+# macro_sequence
+
+# end
+# entity
+RegistratorZ
+# storage
+db|cpuVERILOG.(6).cnf
+db|cpuVERILOG.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+registratorz.v
+172c912839b3b1d9ecd24b68616d3685
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+HOLD
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTR
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTL
+011
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET
+100
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+RegistratorZ:regz
 }
 # macro_sequence
 
